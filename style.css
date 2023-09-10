@@ -1,0 +1,22 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+}
+*{
+   border: 1px solid red;
+}
+
+.gridCnt {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  height: 960px;
+  justify-content: center;
+  align-items: center;
+}
+
+.items {
+  /* border: 2px solid black; */
+  margin: 2px; 
+  padding: 23px;
+  color: green;
+}
