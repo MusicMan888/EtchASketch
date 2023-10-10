@@ -9,7 +9,35 @@
   
 </head>
 <body> 
-  <div class="gridCnt"></div>
+  <div class="plyArea">
+    <h1 class="title">Etch-A-Sketch</h1>
+
+    <div class="user-input">
+      <p>New grid size:</p><input type="text" class="user-in">
+      <p class="user-copy"></p>
+      <button class="submit">Submit</button> 
+    </div>
+    <p class="prompt"></p>
+
+    <div class="gridCnt"></div>
+
+    <div class="controls">
+      <form id=btnContainer>
+        <input type="radio" id="black" name="color" value="black"><label for "black">Black</label>
+        <input type="radio" id="red" name="color" value="red"><label for "red">Red</label>
+        <input type="radio" id="blue" name="color" value="blue"><label for "blue">Blue</label>
+        <input type="radio" id="green" name="color" value="green"><label for "green">Green</label>
+        <input type="radio" id="random" name="color" value="random"><label for "random">Random</label>
+        <input type="radio" id="erase" name="color" value="erase"><label for "erase">Erase</label>
+      </form>
+
+      <button class="clear-btn">Clear</button>
+
+      <div class="footer">
+        <!-- Name, email, etc-->
+      </div>
+    </div>
+  </div>
 </body>
   
 </html>
