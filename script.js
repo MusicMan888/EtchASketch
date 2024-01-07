@@ -25,7 +25,7 @@ function dispGridDm(){
 }
 
 function usrPrompt(){
-  u_prompt.textContent = "Enter A Number Between 10 And 99";
+  u_prompt.textContent = "Enter a number between 10 and 99";
 }
 
 function createGrid(){
@@ -34,7 +34,7 @@ console.log("enter createGrid()")
   console.log(num);
   // if num < 0 - works
   if(num < 0 || num > 99 || isNaN(num)){
-    u_prompt.textContent = "Make Sure It's A Number Between 10 And 99";
+    u_prompt.textContent = "Make sure it's a number between 10 and 99";
   } else {
     //clear values
     u_prompt.textContent = "";
@@ -44,7 +44,7 @@ console.log("enter createGrid()")
 
     //make default 16 x 16 grid 
     if (num == 0 || num > 99 || num == ""){
-      u_prompt.textContent = "Default Grid Is 16 x 16";
+      u_prompt.textContent = "Default grid is: 16 X 16";
       for(let a = 0; a < 16; a++){
         let row = document.createElement('div');
         row.classList.add('row');
@@ -57,7 +57,7 @@ console.log("enter createGrid()")
       }
     } else {
         if(num < 10 || num > 99 || isNaN(num)){
-          u_prompt.textContent = "Make Sure It's A Number Between 10 And 99";
+          u_prompt.textContent = "Make sure it's a number between 10 and 99";
           for(let a = 0; a < 16; a++){
             let row = document.createElement('div');
             row.classList.add('row');
@@ -69,7 +69,7 @@ console.log("enter createGrid()")
             }
           }
         } else {
-          u_prompt.textContent = "User Grid Is " + num + " x " + num;
+          u_prompt.textContent = "User grid is: " + num + " X " + num;
           for (let a = 0; a < num; a++){
             let row = document.createElement('div');
             row.classList.add('row');
